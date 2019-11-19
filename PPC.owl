@@ -1,0 +1,2761 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#"
+     xml:base="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC">
+        <dc:date>2019/09/25</dc:date>
+        <dc:title>2019/09/25
++ Added license/rights
++ Added description to business planning &amp; control process families
+
+2018/10/24
++ Added link to Open Access paper in ontology description
++ Descriptions and titles for Unit Load Formation classes
++ Descriptions and titles for Test &amp; Inspection classes
++ Added Test &amp; Inspection subclasses, with description and title
++ Descriptions and titles for Handling classes and subclasses
+
+2017/12/29
+Initial version</dc:title>
+        <dc:title>Production Process Classification</dc:title>
+        <dc:description>Term set for processes in production, covering four main categories, with underlying families, classes and subsclasses.
+
+See also (Open Access): https://doi.org/10.1016/j.procir.2018.03.021</dc:description>
+        <dc:rights>This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0). To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/</dc:rights>
+        <dc:creator>Daniel G.H. Sørensen
+daniel@mp.aau.dk</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AdhesiveBonding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AdhesiveBonding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AgeHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AgeHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AirArcCutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AirArcCutting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AirGunSpraying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AirGunSpraying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AirQuenchHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AirQuenchHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Allocate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Allocate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Allocation is the creation of a partial quantity of a defined size or amount from a single quantity, and the movement of said partial quantity to a target location.</dc:description>
+        <dc:title>Allocate</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Annealing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Annealing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annealing is the heat treatment of a material to improve certain mechanical and/or chemical properties. Material is heated to a specific temperature range and held there for a certain amount of time. The material is then cooled at a suitable rate and the desired properties are achieved.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annealing</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Anodizing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Anodizing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Arrange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Arrange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Arranging is the movement of bodies from an undefined to a predetermined orientation and position. It serves to create a defined spatial arrangement of several similar bodies. It is defined by specifying the actual and the desired arrangement of the body.</dc:description>
+        <dc:title>Arrange</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Arranged_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Arranged_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage"/>
+        <dc:description>Arranges storage is the storage of geometrically determined bodies, where orientation and position is determined in all degrees of freedeom.</dc:description>
+        <dc:title>Arrange Storage</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Austempering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Austempering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BarrelTumbling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BarrelTumbling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Beading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Beading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BlowMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BlowMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bolting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bolting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fastening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Boring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Boring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Branch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Branch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Branching is the division of a single flow of quantities into two or more partial flows.</dc:description>
+        <dc:title>Branch</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BrazeWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BrazeWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Broaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Broaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BundleDrawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BundleDrawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Burninshing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Burninshing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceModification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CWbyForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CWbyForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdWorking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CWbyPulling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CWbyPulling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdWorking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CWbyRolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CWbyRolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdWorking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Carbonitriding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Carbonitriding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Carburizing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Carburizing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CavityTypeECM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CavityTypeECM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CavityTypeEDM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CavityTypeEDM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CentrifugalCompacting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CentrifugalCompacting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes modifying the properties of a solid body prior to or after it has achieved its shape.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Change Material Properties</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Handling"/>
+        <dc:description>The creation of a new quantity of geometrically determined bodies from an existing quantity. An existing quantity (or quantities) are either divided or combined into a new quantity.</dc:description>
+        <dc:title>Change Quantities
+Alternateive: Varitation of Quantities</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckColour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckColour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Check colour is the determination of whether bodies have a predetermined reference colour.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Check colour</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckIdentity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckIdentity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description>Check identity is the determination of whether a body meets certain identifying properties. Identity may be checked both through test of physical properties of the body (such as weight, shape and size etc.) or via other identification methods such as barcodes, RFID tags or NFC tags.</dc:description>
+        <dc:title>Check Identity</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckOrientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckOrientation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description>Check Orientation is the determination of whether bodies have a predetermined orientation in a reference coordinate system.</dc:description>
+        <dc:title>Check Orientation</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckPosition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckPosition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description>Check position is the determination of whether bodies are at predetermined points in a reference coordinate system.</dc:description>
+        <dc:title>Check Position</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckPresence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckPresence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description>Check Presence is the determination of whether a body is present (available) in a predefined area.</dc:description>
+        <dc:title>Check Presence</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Inspection"/>
+        <dc:description>The checking of one or more properties is the determination of whether bodies meet certain specified conditions or states.</dc:description>
+        <dc:title>Check Properties</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckShape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckShape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description>Check Shape is the determination of a whether the shape of bodies align with a predetermined reference shape or geometry.</dc:description>
+        <dc:title>Check shape</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+        <dc:description>Check size is the determination of whether bodies fit within a certain predetermined size range.</dc:description>
+        <dc:title>Check Size</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckWeight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckWeight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CheckProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalDeburring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalDeburring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Chromizing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Chromizing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Clamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Clamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Securing"/>
+        <dc:description>Clamping is the temporary securing of a body in a particular orientation and position using force.</dc:description>
+        <dc:title>Clamp</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdDipCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdDipCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdHeading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdHeading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdWorking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdWorking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold working is the plastic deformation of a material carried out at a temperature lower than the recrystallisation temperature - often around room temperature.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cold Working</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Combine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Combine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Combine is the creation of a single quantity from any number of existing partial quantities.</dc:description>
+        <dc:title>Combine</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CompressionMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CompressionMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ContinuousCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ContinuousCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ConventionalBlanking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ConventionalBlanking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Convey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Convey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Conveying is the movement of bodies (or materials) from one arbitrary position to another. Path and orientation during the movement are not necessarily defined.</dc:description>
+        <dc:title>Convey</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CorrugationBending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CorrugationBending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Count -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Count">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureProperties"/>
+        <dc:description>Counting is the numerical determination of a number of bodies or features.</dc:description>
+        <dc:title>Count</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CurtainCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#CurtainCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cyaniding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cyaniding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DieCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DieCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DiffusionBonding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DiffusionBonding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DiffusionHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DiffusionHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dinking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DipBrazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DipBrazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DipSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DipSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DirectExtrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DirectExtrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Displace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Displace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Displacement is the movement of a body from one predetermined location to another through translation along a straigh line. Orientation of the body remains unchanged.</dc:description>
+        <dc:title>Displace</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Divide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Divide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Divide is the creation of a partial quantity from a larger quantity.</dc:description>
+        <dc:title>Divide
+Alternate: Division</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Drawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Drawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Drilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Drilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DropForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DropForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DryPressing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#DryPressing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#EDMGrinding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#EDMGrinding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#EDMSawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#EDMSawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectricalArcWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectricalArcWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectricalResistanceWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectricalResistanceWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electrocoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electrocoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electroforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electroforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectrohydraulicForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectrohydraulicForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyRateForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectromagneticForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectromagneticForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyRateForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electron-beamMelting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electron-beamMelting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electroplating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Electroplating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectrostaticCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ElectrostaticCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Embossing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Embossing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExplosiveCompacting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExplosiveCompacting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExplosiveForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExplosiveForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyRateForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExplosiveWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExplosiveWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExtrusionMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ExtrusionMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fastening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fastening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FilamentWinding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FilamentWinding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FineBlanking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FineBlanking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FlameHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FlameHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FlameSpraying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FlameSpraying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Flanging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Flanging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Flaring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Flaring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FlexibleMouldCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FlexibleMouldCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FluidizedBedCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FluidizedBedCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FoilRolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FoilRolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rolling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes changing the shape of a solid body while maintaining the mass and cohesion of the body.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forming</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FrictionWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FrictionWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Full-MouldCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Full-MouldCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FullAnnealing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FullAnnealing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Annealing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FunctionalTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FunctionalTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Test&amp;Inspection"/>
+        <dc:description>Processes testing whether a workpiece or assembly can carry out its intended function.</dc:description>
+        <dc:title>Functional test</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FurnaceBrazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FurnaceBrazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FusedDepositionModeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#FusedDepositionModeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#GasCutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#GasCutting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#GearCutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#GearCutting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#GrinderTypeECM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#GrinderTypeECM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Grinding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Grinding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Guide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Guide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Guiding is the movement of bodies from one predetermined position to another predetermined position along a defined path. The orientation of bodies are defined at every point of movement.
+Feeding and removal are variants of guiding, and identify the goal or purpose of the movement itself.</dc:description>
+        <dc:title>Guide</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HammerForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HammerForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HandLay-up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HandLay-up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Handling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Handling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MaterialHandling"/>
+        <dc:description>Processes involving movement of material inside manufacturing systems, i.e. within or between cells/machines in a manufacturing system.</dc:description>
+        <dc:title>Handling</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HeatTinting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HeatTinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hemming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hemming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyBeamCutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyBeamCutting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyBeamWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyBeamWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyRateForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighEnergyRateForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighPressureAirlessSpray -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HighPressureAirlessSpray">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Securing"/>
+        <dc:description>Holding is the temporary securing of a body in a particular orientation and position.</dc:description>
+        <dc:title>Hold</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Honing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Honing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HotDipCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HotDipCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hydroforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Hydroforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HydrostaticExtrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#HydrostaticExtrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ImmersionChemicalMilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ImmersionChemicalMilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ImpactExtrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ImpactExtrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Impregnate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Impregnate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filling&amp;Dispensing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#IndirectExtrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#IndirectExtrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InductionBrazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InductionBrazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InductionHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InductionHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InductionSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InductionSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InfraredBrazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InfraredBrazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InfraredSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InfraredSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InjectionMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InjectionMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Inspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Inspection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Test&amp;Inspection"/>
+        <dc:description>Processes inspecting or measuring certain properties of one or more workpieces.</dc:description>
+        <dc:title>Inspection</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Intraforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Intraforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InvestmentCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#InvestmentCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#IronSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#IronSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#IsostaticPressing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#IsostaticPressing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#JetMachining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#JetMachining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#JoggleBending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#JoggleBending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes joining or assembling two or more geometrically determined solid bodies, or joining one body to a formless material.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joining</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#KnifeDeburring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#KnifeDeburring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Knurling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Knurling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceModification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Lancing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Lancing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Piercing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Lapping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Lapping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#LaserForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#LaserForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#LineControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#LineControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Control&amp;Planning"/>
+        <dc:description>Processes describing the control of indvidual production systems or lines</dc:description>
+        <dc:title>Line Control</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Magnetisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Magnetisation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetisation is the manner in which a magnetic material purposefully obtains magnetism either temporarily or permanently.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetisation</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProductionProcesses"/>
+        <dc:description>Processes adding value by changing the form or make-up of materials.</dc:description>
+        <dc:title>Manufacturing</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Martempering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Martempering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MatchedDieForming_Drawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MatchedDieForming_Drawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MaterialHandling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MaterialHandling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProductionProcesses"/>
+        <dc:description>Processes focusing on providing value by handling material, i.e. making sure they are available in the right place at the right time.</dc:description>
+        <dc:title>Material Handling</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Measure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Measure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureProperties"/>
+        <dc:description>Measure is determination of a value as multiple of a reference quantity.</dc:description>
+        <dc:title>Measure</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureOrientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureOrientation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureProperties"/>
+        <dc:description>Measure orientation is the numerical determination of the actual orientation of a body in a reference coordinate system.</dc:description>
+        <dc:title>Measure orientation</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasurePosition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasurePosition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureProperties"/>
+        <dc:description>Measure position is the numerical determination of the actual position of a body in a reference coordinate system.</dc:description>
+        <dc:title>Measure position</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureProperties -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MeasureProperties">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Inspection"/>
+        <dc:description>Measure Properties is the numerical determination of certain properties for one or more bodies.</dc:description>
+        <dc:title>Measure Properties</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Merge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Merge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Merging is the creation of a single flow of quantities from two or more partial flows.</dc:description>
+        <dc:title>Merge</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Handling"/>
+        <dc:description>Movement of a body, changing its spatial arrangement in one or more ways.</dc:description>
+        <dc:title>Movement</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Nesting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Nesting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Nibbling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Nibbling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shearing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Nitriding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Nitriding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#No-BakeMouldCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#No-BakeMouldCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#NonReactiveAdhesiveBonding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#NonReactiveAdhesiveBonding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AdhesiveBonding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Notching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Notching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Piercing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#OilQuenchHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#OilQuenchHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Orientate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Orientate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Orientate is the movement of a body from an undefined to a predetermined orientation. The position of the body is not changed during this process. It is defined by specifying the actual and the desired orientation of the body.</dc:description>
+        <dc:title>Orientate</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Packaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Packaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnitLoadFormation"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Packaging</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PadPrinting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PadPrinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Printing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Partition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Partition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Partition is the creation of a partial quantity of a defined size or amount from a single quantity. Separation is a special form of partition with a target quantity of one.
+Dosing or dispensing is a synomym for partition (and partly for allocation), but applied to formless materials in various states.</dc:description>
+        <dc:title>Partition</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PartlyArrangedStorage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PartlyArrangedStorage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage"/>
+        <dc:description>Partly arranged storage is the storage of geometrically determined bodies where orientation and position of bodies are only determined for a single degree of freedom.</dc:description>
+        <dc:title>Partly Arranged Storage</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Peening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Peening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ColdWorking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Perforating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Perforating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Piercing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PerformanceTest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PerformanceTest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Test&amp;Inspection"/>
+        <dc:description>Processes testing how well a workpiece or assembly can carry out its function over an extended period of time.</dc:description>
+        <dc:title>Performance test</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PermanentMouldCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PermanentMouldCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PhotoEtching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PhotoEtching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PhotoMilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PhotoMilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Photochemical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Photochemical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PierceRolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PierceRolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rolling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Piercing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Piercing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PlasmaArcCutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PlasmaArcCutting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PlasterMouldCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PlasterMouldCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PolyjetModeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PolyjetModeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Position">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Positioning is the movement of a body from an undefined to a predetermined position. Orientation of the body is unchanged during this process. It is defined by specifying the actual and the desired position of the body.</dc:description>
+        <dc:title>Position</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Pour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Pour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filling&amp;Dispensing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PressFit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PressFit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fitting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PressForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PressForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Pressing_Compacting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Pressing_Compacting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PressureWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#PressureWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Printing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Printing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProcessAnnealing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProcessAnnealing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Annealing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProductionProcesses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProductionProcesses"/>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Pultrusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Pultrusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Punching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Punching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Piercing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Radiation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Radiation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ReactiveAdhesiveBonding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ReactiveAdhesiveBonding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AdhesiveBonding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Reaming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Reaming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Release -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Release">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Securing"/>
+        <dc:description>Release is the reverse of hold.</dc:description>
+        <dc:title>Release</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Reset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Reset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ResistanceBrazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ResistanceBrazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ResistanceSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ResistanceSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rivetting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rivetting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fastening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RollForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RollForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RollForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RollForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RotaryShearing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RotaryShearing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shearing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rotate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rotate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Rotation is the movement of a body from one known orientation to another around a certain axis at a specified reference point. The position of the body&apos;s reference point remains unchanged.</dc:description>
+        <dc:title>Rotate</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RotationalMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RotationalMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RubberDieForming_Drawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#RubberDieForming_Drawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SandCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SandCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Sawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Sawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Screwing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Screwing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fastening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Seaming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Seaming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Securing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Securing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Handling"/>
+        <dc:description>Processes securing an object preserve a defined state of the object. This securing may be either permanent or temporary. Three possible operating principles are available when handling bodies: (1) force, (2) material and (3) shape closure.</dc:description>
+        <dc:title>Securing</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SelectiveLaserSintering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SelectiveLaserSintering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes changing the shape of a solid body while reducing the cohesion of the body partly or wholly.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Separating</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes creating a solid body from an otherwise shapeless material by creating cohesion.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shaping</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shearing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shearing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetLaminating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetLaminating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetRolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetRolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rolling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ShellMouldCasting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ShellMouldCasting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Casting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ShortCycleAnnealing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ShortCycleAnnealing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Annealing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ShrinkFit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ShrinkFit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fitting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SilkScreenPrinting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SilkScreenPrinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Printing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Slew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Slew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Slewing is the movement of a body from one predetermined position and orientation to another through rotation about a distal axis.
+All rotational movements about axis outside the minimal surface envelope of a body are slewing movements.</dc:description>
+        <dc:title>Slew</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SlipCasting_Compacting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SlipCasting_Compacting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Compacting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SlipFit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SlipFit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fitting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Slitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Slitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shearing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filling&amp;Dispensing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Sort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Sort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeQuantities"/>
+        <dc:description>Sorting is the assignment and division of a set of different bodies according to particular features, characteristics or classes.</dc:description>
+        <dc:title>Sort</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Spinning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Spinning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayChemicalMilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayChemicalMilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChemicalSeparating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayLay-up -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayLay-up">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Squaring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Squaring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shearing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Stacking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Stacking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnitLoadFormation"/>
+        <dc:description>Stacking of bodies vertically, horisontally or both, such that the stack of bodies can be moved as one. Additional unit load processes may also be carried out on stacks to improve integrity of the unit load (e.g. strapping and wrapping processes)</dc:description>
+        <dc:title>Stacking</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SteelRuleDieBlanking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SteelRuleDieBlanking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Stereolithography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Stereolithography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Handling"/>
+        <dc:description>Storage of required materials in the shape of geometrically determined bodies. Storage in the handling family is storage of materials at or near the production system where it is to be used, or storage of the final product prior to its transportation or shipping.</dc:description>
+        <dc:title>Storage</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage_Hold -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage_Hold">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MaterialHandling"/>
+        <dc:description>Processes involving storage of materials away from the manufacturing systems, e.g. warehouses etc. Typically longer-term storage compared to the Storage class in the Handling Family.</dc:description>
+        <dc:title>Storage (Hold)</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#StraightAngleBending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#StraightAngleBending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Strapping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Strapping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnitLoadFormation"/>
+        <dc:description>Strapping of one or more bodies to improve the integrity of bodies. Strapping material is usually in the form of bands, and does not completely cover the new unit load.</dc:description>
+        <dc:title>Strapping</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#StretchForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#StretchForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SheetMetalForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#StructuralRolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#StructuralRolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Rolling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Superfinishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Superfinishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceModification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceModification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Manufacturing"/>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Processes modifying the surface of a solid body in order to enhance properties or appearance by applying an adhering layer of a shapeless material or mechanically modifying the surface.</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface Treatment</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Swaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Swaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeForming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Swaging_Solids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Swaging_Solids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+        <dc:description>Reduction of a metal workpiece into a desired shape or size through a succession of rapid hammer blows from a rotating or stationary die. Workpiece may be hot or cold, but it is usually cold.
+Todd</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Tempering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Tempering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Annealing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalDeburring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalDeburring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalSeparating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Separating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermoMechanicalTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermoMechanicalTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Thermoforming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Thermoforming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Threading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Threading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Three-dimensionalPrinting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Three-dimensionalPrinting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TorchBrazing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TorchBrazing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Brazing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TorchSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TorchSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Transfer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Transfer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Movement"/>
+        <dc:description>Transferring is the movement of bodies from one predetermined position to another along an undefined path. The orientation degree of the body remains unchanged.
+Both the start and end position along with the initial and final position are defined. Both the path and orientation are variable. Inputting and outputting (loading and unloading) are variants of transfer and identify the goal or purpose of the movement.</dc:description>
+        <dc:title>Transfer</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TransferMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TransferMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MaterialHandling"/>
+        <dc:description>Processes involving movement of material from one location to another, e.g. from manufatcuring location to distribution location or from one manufacturing system to another.</dc:description>
+        <dc:title>Transport</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeBending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeBending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Bending"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeDrawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeDrawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#TubeForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UltrasonicMachining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UltrasonicMachining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#AbrasiveMachining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UltrasonicWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UltrasonicWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnarrangedStorage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnarrangedStorage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Storage"/>
+        <dc:description>Unarranged storage is the storage of geometrically determined bodies with unknown or arbitrary orientation and position for all degrees of freedom.</dc:description>
+        <dc:title>Unarranged Storage</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Unclamp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Unclamp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Securing"/>
+        <dc:description>Unclamp</dc:description>
+        <dc:description>Unclamp is the reverse of clamp.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnitLoadFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnitLoadFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#MaterialHandling"/>
+        <dc:description>Processes dealing with restriction of materials so they maintain integrity when handled.</dc:description>
+        <dc:title>Unit Load Formation</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UpsetForging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UpsetForging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forging"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VacuumCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VacuumCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SprayCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VacuumPressure-BagMoulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VacuumPressure-BagMoulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Composite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VapourisedMetalCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VapourisedMetalCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThermalCoating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VibratoryFinishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#VibratoryFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Deburring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WaterQuenchHardening -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WaterQuenchHardening">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ThroughHardening"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WaveSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WaveSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WetForming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WetForming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Moulding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WireBrushFinishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#WireBrushFinishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceModification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Wrapping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Wrapping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#UnitLoadFormation"/>
+        <dc:description>Wrapping of one or more bodies in a material completely covering bodies. Wrapping material acts as the surface of newly formed unit load.</dc:description>
+        <dc:title>Wrapping</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Buffing&amp;Polishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Buffing&amp;Polishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceModification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BusinessPlanning&amp;Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#BusinessPlanning&amp;Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Control&amp;Planning"/>
+        <dc:description>Core business processes. Alternatively Enterprise Resource Planning</dc:description>
+        <dc:title>Business Planning &amp; Control</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Control&amp;Planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Control&amp;Planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProductionProcesses"/>
+        <dc:description>Processes creating value by facilitating the control of systems through action and reaction based on information.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Dip&amp;FlowCoating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#SurfaceTreatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Extrusion&amp;Drawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Forming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filling&amp;Dispensing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Filling&amp;Dispensing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Joining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Friction&amp;UltrasonicSoldering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Friction&amp;UltrasonicSoldering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Soldering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Gas&amp;ChemicalWelding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Gas&amp;ChemicalWelding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Welding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Insert&amp;PutIn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Insert&amp;PutIn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Lay&amp;PutOn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Lay&amp;PutOn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Assembly"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ManufacturingOperations&amp;Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ManufacturingOperations&amp;Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Control&amp;Planning"/>
+        <dc:description>Operations management and MES related processes</dc:description>
+        <dc:title>Manufacturing Operations &amp; Control</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Milling&amp;Routing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Milling&amp;Routing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Parting&amp;Grooving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Parting&amp;Grooving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping&amp;Planing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaping&amp;Planing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaving&amp;Trimming -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Shaving&amp;Trimming">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Blanking"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Sintering&amp;Burning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Sintering&amp;Burning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ChangeMaterialProperties"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Spring&amp;SnapFit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Spring&amp;SnapFit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Fitting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Test&amp;Inspection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Test&amp;Inspection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#ProductionProcesses"/>
+        <dc:description>Processes adding value by testing and inspecting workpieces, making sure the process can continue or is finished satisfactorily.</dc:description>
+        <dc:title>Test and Inspection</dc:title>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Turning&amp;Facing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Turning&amp;Facing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/daniel/ontologies/2017/9/PPC#Cutting_Chips"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
